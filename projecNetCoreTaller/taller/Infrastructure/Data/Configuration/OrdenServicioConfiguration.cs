@@ -28,26 +28,10 @@ namespace Infrastructure.Data.Configuration
             .IsRequired()
             .HasColumnType("Date");
 
-            builder.Property(p => p.NombreCliente)
-            .IsRequired()
-            .HasMaxLength(50);
-
-            builder.Property(p => p.NumeroPlaca)
-            .IsRequired()
-            .HasMaxLength(10);
-
-            builder.Property(p => p.Kilometraje)
-            .IsRequired()
-            .HasColumnType("double");
-
             builder.Property(p => p.DiagnosticoCliente)
             .IsRequired()
             .HasMaxLength(50);
 
-            builder
-            .HasOne(p => p.Mecanico)
-            .WithMany(p =>p.OrdenesServicios)
-            .HasForeignKey(p => p.IdMecanicoFk);
 
             builder.Property(p => p.DiagnosticoExperto)
             .IsRequired()

@@ -12,9 +12,6 @@ namespace Core.Entities
         public int IdClienteFk {get; set;}
         public Cliente? Cliente { get; set; }
         public DateTime FechaOrden {get; set;}
-        public string? NombreCliente {get; set;}
-        public string? NumeroPlaca {get; set;}
-        public double Kilometraje {get; set;}
         public string? DiagnosticoCliente {get; set;}
         public int IdMecanicoFk {get; set;}
         public Mecanico? Mecanico {get;set;}

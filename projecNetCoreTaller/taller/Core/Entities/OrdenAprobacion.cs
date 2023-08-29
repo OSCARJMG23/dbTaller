@@ -10,8 +10,6 @@ namespace Core.Entities
         public int NroOrdenFk {get; set;}
         public OrdenServicio? OrdenServicio {get; set;}
         public DateTime Fecha {get; set;}
-        public int IdEmpleadoFk {get; set;}
-        public Mecanico? Mecanico {get; set;}
         public int IdDetalleFk {get; set;}
         public ICollection<DetalleAprobacion>? DetallesAprobacions {get;set;}
     }

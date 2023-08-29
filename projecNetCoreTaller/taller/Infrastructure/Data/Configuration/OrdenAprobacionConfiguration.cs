@@ -23,11 +23,7 @@ namespace Infrastructure.Data.Configuration
             builder.Property(p => p.Fecha)
             .IsRequired()
             .HasColumnType("Date");
-
-            builder
-            .HasOne(p => p.Mecanico)
-            .WithMany(p =>p.OrdenesServicios)
-            .HasForeignKey(p => p.NroOrdenFk);
+        
         }
     }
 }

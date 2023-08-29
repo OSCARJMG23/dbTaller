@@ -16,5 +16,6 @@ namespace Core.Entities
         public int IdTipoPersonaFk {get; set;}
         public TipoPersona? TipoPersona { get; set; }
         public ICollection<OrdenServicio>? OrdenesServicios {get;set;}
+        
     }
 }
